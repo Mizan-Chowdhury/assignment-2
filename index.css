@@ -1,0 +1,291 @@
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* navbar styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 10rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.logo-G {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navigaton-bar ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navigaton-bar a {
+  color: #3c354f;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.icons i {
+  margin-left: 10px;
+}
+.icons {
+  border-radius: 5px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 0.5rem;
+}
+
+/* banner styles */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  background: #fff;
+}
+.banner-image {
+  background-image: url("images/Group\ 14.png");
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
+  height: 500px;
+  width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner-text {
+  position: absolute;
+  top: 15%;
+}
+.banner-img img {
+  width: 500px;
+}
+.banner-title-1 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-title-2 {
+  font-size: 6rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.banner-description {
+  color: #534c64;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.btn-1,
+.btn-2 {
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  padding: 0.8rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-2 {
+  border-radius: 48px;
+  background: #4ec5f7;
+  margin-left: 1rem;
+}
+
+/* games section styles */
+.online-games-container {
+  padding: 5rem 8rem;
+}
+.game-heading {
+  color: #0b0223;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.game-color {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.game-description {
+  color: #534c64;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.games-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 250px;
+}
+.card img {
+  width: 100%;
+}
+.card p {
+  margin: 0.8rem 0;
+  color: #534c64;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .navigaton-bar ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    padding: 1rem;
+    text-align: center;
+  }
+  .banner-img img {
+    width: 300px;
+  }
+  .banner-image {
+    width: 100%;
+    height: 350px;
+  }
+  .banner-text {
+    text-align: left;
+    padding: 0 5rem;
+  }
+  .banner-title-1 {
+    font-size: 1.5rem;
+  }
+  .banner-title-2 {
+    font-size: 3rem;
+  }
+  .banner-description {
+    font-size: 0.8rem;
+    /* text-align: left; */
+  }
+  .btn-1,
+  .btn-2 {
+    font-size: 0.6rem;
+    margin-left: 0;
+  }
+  .online-games-container {
+    padding: 5rem 2rem;
+  }
+  .game-heading {
+    font-size: 1.5rem;
+  }
+  .game-description {
+    font-size: 0.7rem;
+  }
+  .games-card-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+    margin-top: 4rem;
+  }
+  .card {
+    width: 280px;
+    height: 280px;
+  }
+  .card img {
+    height: 100%;
+  }
+  .card p {
+    font-size: 0.6rem;
+  }
+}
+
+/* media queries styles for tablet */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .nav-container {
+    padding: 2rem;
+  }
+  .banner-container {
+    /* flex-direction: column; */
+    padding: 0 2rem;
+  }
+  .banner-img img {
+    width: 300px;
+  }
+  .banner-image {
+    width: 100%;
+    height: 350px;
+  }
+  .banner-text {
+    padding: 0 2rem;
+  }
+  .banner-title-1 {
+    font-size: 1.5rem;
+  }
+  .banner-title-2 {
+    font-size: 3rem;
+  }
+  .banner-description {
+    font-size: 0.8rem;
+    /* text-align: left; */
+  }
+  .btn-1,
+  .btn-2 {
+    font-size: 0.6rem;
+    margin-left: 0;
+  }
+  .online-games-container {
+    padding: 5rem 2rem;
+  }
+  .game-heading {
+    font-size: 2rem;
+  }
+  .game-description {
+    font-size: 0.8rem;
+  }
+  .games-card-container {
+    gap: 1rem;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card img {
+    height: 100%;
+  }
+  .card p {
+    font-size: 0.6rem;
+  }
+}
